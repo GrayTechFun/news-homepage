@@ -13,9 +13,12 @@ html {
   background-repeat: no-repeat;
 }
 
+.sidebar {
+  margin-left: 21em;
+}
+
 .container {
   width: 30em;
-  background-color: bisque;
   margin: 0 auto;
 }
 
@@ -30,6 +33,7 @@ header {
   justify-content: space-between;
   margin: 0 1em;
   padding-top: 1em;
+  margin-bottom: 3em;
 }
 
 .logo {
@@ -38,7 +42,10 @@ header {
 }
 
 nav {
+  display: flex;
+  color: #726f79;
   visibility: hidden;
+  gap: 3em;
 }
 
 .para {
@@ -65,4 +72,143 @@ button {
   background-color: #eb4641;
   margin-top: 0.5em;
   border-radius: 0.1em;
+  margin-bottom: 2.5em;
+}
+
+.new {
+  background-color: #000015;
+  margin: 0 1em;
+  margin-bottom: 1em;
+  width: 28em;
+  height: 30em;
+  padding: 1em;
+  color: white;
+}
+
+.new h1 {
+  color: #e59944;
+  margin-bottom: 1em;
+}
+
+.new h3 {
+  margin-bottom: 0.5em;
+  font-size: 1.5rem;
+}
+
+.new p {
+  color: #707184;
+  margin-bottom: 1.5em;
+  font-size: 1.3rem;
+}
+
+hr {
+  border-color: #707184;
+  margin-bottom: 1em;
+}
+
+.picture {
+  display: flex;
+  margin: 2em 1em;
+}
+
+.picture img {
+  width: 6em;
+}
+
+.paras {
+  margin: 0 1em;
+}
+
+.paras h1 {
+  color: #bbbbc0;
+}
+
+.paras h4 {
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+  font-size: 1.2rem;
+}
+
+.paras p {
+  color: #86828a;
+  line-height: 1.2em;
+}
+
+h4:hover {
+  cursor: pointer;
+  color: #d14346;
+}
+
+.ul:hover {
+  cursor: pointer;
+  color: #d14346;
+}
+
+h3:hover {
+  cursor: pointer;
+  color: #e5993c;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+/* .sidebarplus {
+  background-image: url(../assets/images/icon-menu-close.svg);
+  width: 20em;
+  background-color: aqua;
+} */
+
+@media only screen and (min-width: 600px) {
+  .container {
+    width: auto;
+    margin-top: 8em;
+  }
+
+  .brnew {
+    display: flex;
+  }
+
+  .para {
+    display: flex;
+  }
+
+  .bright {
+    width: auto;
+  }
+
+  .brnew {
+    width: auto;
+  }
+
+  .bright img {
+    width: 28em;
+    height: 20em;
+    width: 43em;
+    object-fit: cover;
+    margin-bottom: 2em;
+  }
+
+  .new {
+    width: 50em;
+    height: 32em;
+    margin-top: -1.5em;
+  }
+
+  .popular {
+    display: flex;
+  }
+
+  nav {
+    visibility: visible;
+  }
+
+  header {
+    margin-bottom: 5em;
+  }
+
+  .sidebar {
+    background-image: none;
+  }
 }
